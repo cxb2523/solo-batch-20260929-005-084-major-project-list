@@ -87,3 +87,29 @@
 - **TV Show Tracker** - Got a favorite show you don’t want to miss? Don’t have a PVR or want to be able to find the show to then PVR it later? Make an application that can search various online TV Guide sites, locate the shows/times/channels and add them to a database application. The database/website then can send you email reminders that a show is about to start and which channel it will be on.
 - **Travel Planner System** - Make a system that allows users to put together their own little travel itinerary and keep track of the airline/hotel arrangements, points of interest, budget, and schedule.
 - **Caesar cipher** - Implement a Caesar cipher, both encoding, and decoding. The key is an integer from 1 to 25. This cipher rotates the letters of the alphabet (A to Z). The encoding replaces each letter with the 1st to 25th next letter in the alphabet (wrapping Z to A). So key 2 encrypts "HI" to "JK", but key 20 encrypts "HI" to "BC". This simple "mono-alphabetic substitution cipher" provides almost no security, because an attacker who has the encoded message can either use frequency analysis to guess the key, or just try all 25 keys.
+
+<!-- BEGIN PROJECT INDEX (auto-generated; do not edit) -->
+
+# Project Index
+
+Categorised inventory inferred from each project's README and entry files by `tools/build_index.py`.
+
+## Files
+
+| Project | Language | Entry | Description |
+| --- | --- | --- | --- |
+| [.pytest_cache](.pytest_cache/README.md) | HTML | - | This directory contains data from the pytest's cache plugin, |
+
+## Graphics and Multimedia
+
+| Project | Language | Entry | Description |
+| --- | --- | --- | --- |
+| [RECOGNITION](RECOGNITION/README.md) | Python | - | Recognition for Projects |
+
+## Web
+
+| Project | Language | Entry | Description |
+| --- | --- | --- | --- |
+| [docs](docs/CNAME) | Unknown | CNAME | Project docs |
+
+<!-- END PROJECT INDEX -->

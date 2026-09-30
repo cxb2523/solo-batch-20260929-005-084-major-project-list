@@ -1,0 +1,6 @@
+# Binary / large-file allowlist for tools/repo_audit.py
+#
+# One entry per line:  <repository-relative path>  <sha256 hex digest>
+# Both the exact path AND the exact content hash must match a file over 1 MiB
+# for it to pass. Renaming or copying a binary does NOT grant an exception.
+# Lines starting with '#' and blank lines are ignored.

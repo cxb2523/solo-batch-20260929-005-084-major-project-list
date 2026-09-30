@@ -1,0 +1,32 @@
+name: repo-hygiene
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install test dependencies
+        run: python -m pip install --upgrade pytest
+
+      - name: Rebuild generated index
+        run: python tools/build_index.py
+
+      - name: Ensure generated index is up to date
+        run: git diff --exit-code -- README.md index.html
+
+      - name: Repository hygiene audit
+        run: python tools/repo_audit.py --check
+
+      - name: Tests
+        run: python -m pytest -q
