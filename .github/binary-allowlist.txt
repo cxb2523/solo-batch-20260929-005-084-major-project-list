@@ -1,0 +1,4 @@
+# Binary allowlist for files larger than 1 MiB (checked by tools/repo_audit.py).
+# One entry per line: <sha256>  <path>
+# Both the path and the sha256 must match; renaming a file does not bypass
+# the size check because the allowlisted path must match as well.
